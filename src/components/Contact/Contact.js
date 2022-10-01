@@ -2,7 +2,7 @@ import React from "react";
 import { Icons } from "../../constants";
 const Contact = () => {
   return (
-    <div className=" bg-black">
+    <div className=" bg-black" id="contact">
       <div className="p-main pt-[8rem]">
         {/* footer title */}
         <h1 className=" text-title  text-primary leading-title capitalize">

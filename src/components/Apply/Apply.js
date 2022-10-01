@@ -2,7 +2,7 @@ import React from "react";
 import { Icons } from "../../constants";
 const Apply = () => {
   return (
-    <div className=" bg-yellow">
+    <div className=" bg-yellow" id="apply">
       <div className=" p-main grid grid-cols-2 py-[8rem]">
         <div className=" w-[70%]">
           <h1 className=" font-title text-[8rem] capitalize leading-[120px]">

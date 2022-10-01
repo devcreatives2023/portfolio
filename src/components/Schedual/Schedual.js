@@ -9,7 +9,7 @@ const Schedual = () => {
     { time: "5:00 -- 5:30 p.m.", subject: "welcome Remarks" },
   ];
   return (
-    <div className="p-main py-[8rem]">
+    <div className="p-main py-[8rem]" id="scheduale">
       <div className=" border-t-2 border-black">
         {/* scheduale title */}
         <h1 className=" font-title text-title">

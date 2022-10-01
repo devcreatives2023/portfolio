@@ -4,7 +4,7 @@ import { Icons, images } from "../../constants";
 const Purpose = () => {
   return (
     <>
-      <div div className="p-main ">
+      <div div className="p-main " id="purpose">
         <div className=" border-t-2 pt-4 border-black">
           <div className=" flex items-center ">
             <h1 className=" font-title text-title ">Purpose</h1>

@@ -2,7 +2,7 @@ import React from "react";
 import { images,Icons } from "../../constants";
 const Location = () => {
   return (
-    <div className=" pt-[8rem] ">
+    <div className=" pt-[8rem] " id="location">
       <div className="p-main">
         <h1 className=" border-t-2 border-black text-title font-title">
           Location{" "}

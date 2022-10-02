@@ -17,12 +17,12 @@ import {
 const Home = () => {
   return (
     <div>
-      <div className="bg-primary h-[110vh]  text-primary">
+      <div className="bg-primary  xl:h-[110vh] lg:h-[110vh] h-[75vh]  text-primary">
         <Navbar />
         <Header />
       </div>
       <div>
-        <div className=" mt-[130px]">
+        <div className=" xl:mt-[130px] lg:mt-[130px] mt-10">
           <Purpose />
           <Reviewers />
           <Talent />

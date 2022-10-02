@@ -21,13 +21,22 @@ module.exports = {
       padding: {
         main: "2rem 3rem",
         text: "0rem 8rem",
+        sm:"1rem 1rem"
       },
       fontSize: {
         title: "11rem",
-        parg:"1.6rem"
+        parg: "1.6rem",
       },
       lineHeight: {
         title: "170px",
+      },
+      screens: {
+        xsm: "445px",
+        sm: "665px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1502px",
+        "2xl": "1536px",
       },
     },
   },

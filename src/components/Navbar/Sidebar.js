@@ -7,35 +7,36 @@ const Sidebar = ({ show, toggle }) => {
     window.scrollTo(0, 0);
   };
   return (
-    <motion.div className=" bg-yellow w-[100%] h-[100%] top-0  bottom-0 p-main fixed z-[100000000]">
-      <div className="border-b-2 text-black border-black pb-[2rem] flex justify-between">
-        <div className=" flex items-center uppercase leading-5 text-xl font-semibold  gap-x-2 bg-main">
-          <Icons.IoLogoReddit className=" text-4xl" />
+    <motion.div className=" bg-yellow xl:w-[100%] lg:w-[100%] w-screen h-[100%] top-0 
+     bottom-0 xl:p-main lg:p-main p-sm fixed z-[100000000]">
+      <div className="border-b-2 text-black border-black xl:pb-[2rem] lg:pb-[2rem] flex justify-between">
+        <div className=" flex xl:items-center lg:items-center  uppercase leading-5 xl:text- xl lg:text-xl font-semibold  gap-x-2 bg-main">
+          <Icons.IoLogoReddit className=" xl:text-4xl lg:text-4xl" />
           <span>
             a digital
             <br />
             design agency
           </span>
         </div>
-        <button onClick={() => show(toggle)} className="text-3xl">
+        <button onClick={() => show(toggle)} className="xl:text-3xl lg:text-3xl text-xl">
           <Icons.GiCrossMark />
         </button>
       </div>
-      <motion.div className=" text-[4rem] text-black capitalize  ">
+      <motion.div className=" xl:text-[4rem] lg:text-[4rem] text-black capitalize  ">
         <motion.ul
          
-          className="flex flex-col mt-12 justify-center items-center"
+          className="flex flex-col mt-12 justify-center  items-center"
         >
           <li
             onClick={handleNavigate}
             className=" font-main hover:font-title transition-all duration-300 ease-in-out flex items-center"
           >
             <span>
-              <Icons.GiHeartKey className=" text-3xl" />
+              <Icons.GiHeartKey className=" xl:text-3xl lg:text-3xl text-xl" />
             </span>
             <a href="#purpose">purpose </a>
             <span>
-              <Icons.GiHeartKey className=" text-3xl mt-2 rotate-[90deg]" />
+              <Icons.GiHeartKey className=" xl:text-3xl lg:text-3xl text-xl mt-2 rotate-[90deg]" />
             </span>
           </li>
           <li
@@ -43,11 +44,11 @@ const Sidebar = ({ show, toggle }) => {
             className=" font-main hover:font-title transition-all duration-300 ease-in-out flex items-center"
           >
             <span>
-              <Icons.GiHeartKey className=" text-3xl" />
+              <Icons.GiHeartKey className=" xl:text-3xl lg:text-3xl text-xl" />
             </span>
             <a href="#location">location </a>
             <span>
-              <Icons.GiHeartKey className=" text-3xl mt-2 rotate-[90deg]" />
+              <Icons.GiHeartKey className=" xl:text-3xl lg:text-3xl text-xl mt-2 rotate-[90deg]" />
             </span>
           </li>
           <li
@@ -55,11 +56,11 @@ const Sidebar = ({ show, toggle }) => {
             className=" font-main hover:font-title transition-all duration-300 ease-in-out flex items-center"
           >
             <span>
-              <Icons.GiHeartKey className=" text-3xl" />
+              <Icons.GiHeartKey className=" xl:text-3xl lg:text-3xl text-xl" />
             </span>
             <a href="#scheduale">scheduale </a>
             <span>
-              <Icons.GiHeartKey className=" text-3xl mt-2 rotate-[90deg]" />
+              <Icons.GiHeartKey className=" xl:text-3xl lg:text-3xl text-xl mt-2 rotate-[90deg]" />
             </span>
           </li>
           <li
@@ -67,11 +68,11 @@ const Sidebar = ({ show, toggle }) => {
             className=" font-main hover:font-title transition-all duration-300 ease-in-out flex items-center"
           >
             <span>
-              <Icons.GiHeartKey className=" text-3xl" />
+              <Icons.GiHeartKey className=" xl:text-3xl lg:text-3xl text-xl" />
             </span>
             <a href="#">apply </a>
             <span>
-              <Icons.GiHeartKey className=" text-3xl mt-2 rotate-[90deg]" />
+              <Icons.GiHeartKey className=" xl:text-3xl lg:text-3xl text-xl mt-2 rotate-[90deg]" />
             </span>
           </li>
           <li
@@ -79,16 +80,16 @@ const Sidebar = ({ show, toggle }) => {
             className=" font-main hover:font-title transition-all duration-300 ease-in-out flex items-center"
           >
             <span>
-              <Icons.GiHeartKey className=" text-3xl" />
+              <Icons.GiHeartKey className=" xl:text-3xl lg:text-3xl text-xl" />
             </span>
             <a href="#contact">contact </a>
             <span>
-              <Icons.GiHeartKey className=" text-3xl mt-2 rotate-[90deg]" />
+              <Icons.GiHeartKey className=" xl:text-3xl lg:text-3xl text-xl mt-2 rotate-[90deg]" />
             </span>
           </li>
         </motion.ul>
       </motion.div>
-      <div className=" flex justify-between mt-[50px] text-xl ">
+      <div className=" flex justify-between mt-[50px] xl:text-xl lg:text-xl ">
         <p className=" uppercase text-black">
           south bay made <br />
           since '01

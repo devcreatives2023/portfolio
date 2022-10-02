@@ -1,18 +1,32 @@
 import React from "react";
 import { images } from "../../constants";
+import { motion } from "framer-motion";
 const Reviewers2 = () => {
   return (
     <>
-      <div div className="p-main ">
-        <div className=" border-t-2 pt-[6rem]  pb-[6rem] border-black">
+      <div div className="xl:p-main lg:p-main p-sm ">
+        <div className=" border-t-2 xl:pt-[6rem] lg:pt-[6rem]  xl:pb-[6rem] lg:pb-[6rem] border-black pt-[2rem] pb-[2rem]">
           <div className=" flex items-center  justify-center">
-            <h1 className="p-main  font-title text-title leading-title  text-center">
-              Meet the <br /> Reviewers <span className="text-2xl  font-main ml-[-40px] font-semibold">(02) </span>
-            </h1>
+            <motion.h1 
+             initial={{ opacity: 0, y: 45 }}
+             whileInView={{
+               opacity: 1,
+               y: 0,
+               transition: {
+                 duration: 1,
+                 type: "spring",
+                 ease: "linear",
+                 delay:0.6
+               },
+             }}
+            className="p-main  font-title xl:text-title lg:text-title xl:leading-title lg:leading-title text-4xl text-center">
+              Meet the <br /> Reviewers <span className="text-2xl  font-main xl:ml-[-40px] lg:ml-[-40px] font-semibold">(02) </span>
+            </motion.h1>
           </div>
-          <div className=" flex justify-center p-main m-auto text-center items-center gap-x-[120px]">
-            <div className=" w-[500px] h-[600px]">LEft side <img  className="w-[500px] h-[600px] object-cover" src={images.purpose2}/></div>
-            <div className=" w-[500px] h-[600px]">Right side <img className="w-[500px] h-[600px] object-cover"  src={images.purpose2}/></div>
+          <div className=" flex flex-col xl:flex-row lg:flex-row justify-center xl:p-main lg:p-main p-ps 
+          m-auto text-center items-center gap-x-[120px]">
+            <div className=" xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px]">LEft side <img  className="xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px] w-[400px] h-[300px] object-cover" src={images.purpose2}/></div>
+            <div className=" xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px]">Right side <img className="xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px] w-[400px] h-[300px] object-cover"  src={images.purpose2}/></div>
           </div>
       
         </div>

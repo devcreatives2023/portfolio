@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { images } from "../../constants";
+import CarouselLeft from "./CarouselLeft";
+import CarouselRight from "./CarouselRight";
 
 const Reviewers = () => {
   return (
@@ -17,7 +19,7 @@ const Reviewers = () => {
                   duration: 1,
                   type: "spring",
                   ease: "linear",
-                  delay:0.5
+                  delay: 0.5,
                 },
               }}
               className="p-main  font-title xl:text-title lg:text-title text-4xl xl:leading-title lg:leading-title  text-center"
@@ -26,20 +28,48 @@ const Reviewers = () => {
             </motion.h1>
           </div>
           <div className=" flex flex-col xl:flex-row lg:flex-row justify-center xl:p-main lg:p-main p-sm m-auto text-center items-center gap-x-[120px]">
-            <div className=" xl:w-[500px] lg:w-[500px] h-[600px]">
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1,
+                  type: "spring",
+                  ease: "linear",
+                  delay: 0.9,
+                },
+              }}
+              className=" xl:w-[500px] lg:w-[500px] h-[600px]"
+            >
               LEft side{" "}
-              <img
+              {/* <img
                 className="xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px] object-cover"
                 src={images.purpose2}
-              />
-            </div>
-            <div className=" xl:w-[500px] lg:w-[500px] h-[600px]">
-              Right side{" "}
-              <img
+              /> */}
+              <CarouselLeft />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1,
+                  type: "spring",
+                  ease: "linear",
+                  delay: 0.9,
+                },
+              }}
+              className=" xl:w-[500px] lg:w-[500px] h-[600px]"
+            >
+              Right side
+              {/* <img
                 className="xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px]  object-cover"
                 src={images.purpose2}
-              />
-            </div>
+              /> */}
+              <CarouselRight />
+            </motion.div>
           </div>
         </div>
       </div>

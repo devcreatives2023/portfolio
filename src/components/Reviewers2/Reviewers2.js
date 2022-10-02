@@ -25,8 +25,45 @@ const Reviewers2 = () => {
           </div>
           <div className=" flex flex-col xl:flex-row lg:flex-row justify-center xl:p-main lg:p-main p-ps 
           m-auto text-center items-center gap-x-[120px]">
-            <div className=" xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px]">LEft side <img  className="xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px] w-[400px] h-[300px] object-cover" src={images.purpose2}/></div>
-            <div className=" xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px]">Right side <img className="xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px] w-[400px] h-[300px] object-cover"  src={images.purpose2}/></div>
+               <motion.div
+               initial={{ opacity: 0, x: 100 }}
+               whileInView={{
+                 opacity: 1,
+                 x: 0,
+                 transition: {
+                   duration: 1,
+                   type: "spring",
+                   ease: "linear",
+                   delay:0.9
+                 },
+               }}
+            className=" xl:w-[500px] lg:w-[500px] h-[600px]">
+              LEft side{" "}
+              <img
+                className="xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px] object-cover"
+                src={images.purpose2}
+              />
+            </motion.div>
+            <motion.div
+               initial={{ opacity: 0, x: -100 }}
+               whileInView={{
+                 opacity: 1,
+                 x: 0,
+                 transition: {
+                   duration: 1,
+                   type: "spring",
+                   ease: "linear",
+                   delay:0.9
+                 },
+               }}
+            
+            className=" xl:w-[500px] lg:w-[500px] h-[600px]">
+              Right side{" "}
+              <img
+                className="xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px]  object-cover"
+                src={images.purpose2}
+              />
+            </motion.div>
           </div>
       
         </div>

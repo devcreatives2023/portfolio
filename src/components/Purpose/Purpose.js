@@ -16,7 +16,7 @@ const Purpose = () => {
                   duration: 1,
                   type: "spring",
                   ease: "linear",
-                  delay: 1,
+                  delay: 0.5,
                 },
               }}
               className=" font-title xl:text-title lg:text-title text-4xl mt-2 "
@@ -24,7 +24,6 @@ const Purpose = () => {
               Purpose
             </motion.h1>
             <span className=" font-semibold xl:text-2xl lg:text-2xl  xl:mt-[90px] lg:mt-[90px] ">
-              {" "}
               (01)
             </span>
           </div>
@@ -43,7 +42,7 @@ const Purpose = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[5rem] relative overflow-hidden ">
+      <div className="mt-[5rem] relative ">
         <div className="relative overflow-hidden">
           <motion.img
             initial={{ scale: 0.9 }}

@@ -30,41 +30,21 @@ const Reviewers2 = () => {
             </motion.h1>
           </div>
           <div
-            className=" flex flex-col xl:flex-row lg:flex-row justify-center xl:p-main lg:p-main p-ps 
-          m-auto text-center items-center gap-x-[120px]"
+            className=" flex flex-col xl:flex-row lg:flex-row justify-center xl:p-main
+            g:p-main p-ps 
+          m-auto text-center items-center xl:gap-x-[120px] lg:gap-x-[120px]"
           >
-            <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 1,
-                  type: "spring",
-                  ease: "linear",
-                  delay: 0.9,
-                },
-              }}
-              className=" xl:w-[500px] lg:w-[500px] h-[600px]"
+            <div
+              className=" xl:w-[500px] lg:w-[500px] xl:h-[600px]
+               lg:h-[600px] w-[300px] h-[200px]"
             >
               <CarouselLeft />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 1,
-                  type: "spring",
-                  ease: "linear",
-                  delay: 0.9,
-                },
-              }}
-              className=" xl:w-[500px] lg:w-[500px] h-[600px]"
+            </div>
+            <div
+              className=" xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px] w-[300px] mt-12 xl:mt-0 lg:mt-0  h-[400px]"
             >
               <CarouselRight />
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

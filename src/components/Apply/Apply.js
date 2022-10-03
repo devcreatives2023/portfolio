@@ -3,7 +3,7 @@ import { Icons } from "../../constants";
 import { motion } from "framer-motion";
 const Apply = () => {
   return (
-    <div className=" bg-yellow" id="apply">
+    <div className=" bg-yellow w-screen" id="apply">
       <div className=" p-sm xl:p-main lg:p-main grid xl:grid-cols-2 lg:grid-cols-2 xl:py-[8rem] lg:py-[8rem] py-[3rem]">
         <div className=" w-[70%]">
           <h1 className=" font-title xl:text-[8rem] lg:text-[8rem] text-3xl capitalize xl:leading-[120px] lg:leading-[120px]">
@@ -19,7 +19,6 @@ const Apply = () => {
                 },
               }}
             >
-              {" "}
               Submit{" "}
             </motion.span>{" "}
             <motion.span
@@ -50,7 +49,6 @@ const Apply = () => {
                 },
               }}
             >
-              {" "}
               folio to{" "}
             </motion.span>{" "}
             <motion.span
@@ -66,15 +64,14 @@ const Apply = () => {
                 },
               }}
             >
-              {" "}
               apply
             </motion.span>
           </h1>
         </div>
         <div className="mt-[50px]">
-          <form className=" flex flex-col gap-y-12">
+          <form className=" flex flex-col gap-y-12 w-screen">
             <motion.input
-              initial={{ opacity: 0, x: 45 }}
+              initial={{ opacity: 0, x: 10 }}
               whileInView={{
                 opacity: 1,
                 x: 0,
@@ -82,33 +79,33 @@ const Apply = () => {
                   duration: 1.3,
                   type: "spring",
                   ease: "linear",
-                  delay:1,
+                  delay: 1,
                 },
               }}
               type="text"
               placeholder="full name"
-              className="w-[100%] outline-none border-b-2 
+              className="xl:w-[100%] lg:w-[100%] w-[90%] outline-none border-b-2 
             bg-transparent  border-red placeholder:text-red xl:placeholder:text-5xl lg:placeholder:text-5xl placeholder:text-xl    py-6 placeholder:capitalize"
             />
             <motion.input
-             initial={{ opacity: 0, x: 45 }}
-             whileInView={{
-               opacity: 1,
-               x: 0,
-               transition: {
-                 duration: 1.3,
-                 type: "spring",
-                 ease: "linear",
-                 delay: 1.5,
-               },
-             }}
+              initial={{ opacity: 0, x: 10 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1.3,
+                  type: "spring",
+                  ease: "linear",
+                  delay: 1.5,
+                },
+              }}
               type="email"
               placeholder="email address"
-              className="w-[100%] outline-none border-b-2 
+              className="xl:w-[100%] lg:w-[100%] w-[90%] outline-none border-b-2 
             bg-transparent  border-red placeholder:text-red xl:placeholder:text-5xl lg:placeholder:text-5xl placeholder:text-xl  py-6 placeholder:capitalize"
             />
             <motion.input
-              initial={{ opacity: 0, x: 45 }}
+              initial={{ opacity: 0, x: 10 }}
               whileInView={{
                 opacity: 1,
                 x: 0,
@@ -121,7 +118,7 @@ const Apply = () => {
               }}
               type="text"
               placeholder="portfolio link"
-              className="w-[100%] outline-none border-b-2 
+              className="xl:w-[100%] lg:w-[100%] w-[90%] outline-none border-b-2 
             bg-transparent  border-red placeholder:text-red xl:placeholder:text-5xl lg:placeholder:text-5xl placeholder:text-xl  py-6 placeholder:capitalize"
             />
           </form>

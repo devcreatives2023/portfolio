@@ -53,13 +53,13 @@ const CarouselLeft = () => {
                   : "pointer-events-none scale-[0] transition-[0.5s] overflow-hidden  flex flex-1 absolute"
               }
             >
-              <img src={item.img} className="xl:w-[600px] lg:w-[600px] xl:h-[650px] lg:h-[650px] object-cover" />
+              <img src={item.img} className="xl:w-[600px] w-[400px] h-[230px]  lg:w-[600px]  xl:h-[650px] lg:h-[650px] object-cover" />
             </div>
           );
         })}
 
         {/* pagination */}
-        <div className="absolute bottom-[-620px] left-[39%] translate-[50%]">
+        <div className="absolute hidden xl:inline lg:inline bottom-[-620px] left-[39%] translate-[50%]">
           {data.map((item, index) => {
             return (
               <div

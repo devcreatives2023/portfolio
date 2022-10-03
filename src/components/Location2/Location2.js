@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 const Location2 = () => {
   return (
     <div className=" bg-black">
-      <div className=" xl:p-main lg:p-main p-sm xl:py-[8rem]  lg:py-[8rem] py-[5rem]">
+      <div className="h-[90vh] xl:h-[180vh] xl:p-main lg:p-main p-sm xl:py-[8rem]  lg:py-[8rem] py-[6rem]">
         <motion.h1
           initial={{ opacity: 0, y: 45 }}
           whileInView={{

@@ -56,15 +56,15 @@ const CarouselRight = () => {
               key={index}
               className={
                 index == current
-                  ? `
-                   
-                 flex flex-col flex-1 absolute  pointer-events-auto opacity-100 transition-[0.5s]  duration-200 scale-[1] `
+                  ? `          
+                 flex flex-col flex-1 absolute  pointer-events-auto opacity-100 transition-[0.5s]  duration-500 scale-[1] `
                   : "pointer-events-none scale-[0] transition-[0.5s] overflow-hidden  flex flex-1 absolute"
               }
             >
               <img
                 src={item.img}
-                className="xl:w-[600px] lg:w-[600px] xl:h-[500px] lg:h-[500px] object-cover border-[4px] border-yellow"
+                className="xl:w-[600px] lg:w-[600px] w-[300px] h-[200px]
+                 xl:h-[500px] lg:h-[500px] object-cover border-[4px] border-yellow"
               />
               <motion.div
                 className=" font-semibold text-left xl:w-[60%] lg:w-[60%] w-[80%] text-[1.6rem] mt-12 uppercase"
@@ -77,7 +77,7 @@ const CarouselRight = () => {
         })}
 
         {/* pagination */}
-        <div className="absolute bottom-[-440px] left-[42%] translate-[50%]">
+        <div className=" hidden xl:inline lg:inline absolute bottom-[-440px] left-[42%] translate-[50%]">
           {data.map((item, index) => {
             return (
               <div

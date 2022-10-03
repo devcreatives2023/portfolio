@@ -27,7 +27,7 @@ const CarouselLeft = () => {
 
   return (
     <div
-      className="flex"
+      className=""
       onMouseEnter={() => {setAutoplay(false)
       clearTimeout(timeOut)}}
       onMouseLeave={() => {
@@ -42,18 +42,19 @@ const CarouselLeft = () => {
               className={
                 index == current
                   ? `
-                   border-[4px] border-yellow
+                   xl:border-[4px] lg:border-[4px] border-yellow
                  flex flex-1 absolute  pointer-events-auto opacity-100 transition-[0.5s]  duration-200 scale-[1] `
                   : "pointer-events-none scale-[0] transition-[0.5s] overflow-hidden  flex flex-1 absolute"
               }
             >
-              <img src={item.img} className="xl:w-[600px] lg:w-[600px] w-[500px] xl:h-[650px] lg:h-[650px] object-cover" />
+              <img src={item.img} className="xl:w-[600px] lg:w-[600px] w-[500px] h-[200px] mt-[400px] xl:mt-0 lg:mt-0
+               xl:h-[650px] lg:h-[650px] object-cover" />
             </div>
           );
         })}
 
         {/* pagination */}
-        <div className="absolute bottom-[-620px] left-[39%] translate-[50%]">
+        <div className="absolute bottom-[-620px] hidden xl:inline left-[39%] translate-[50%]">
           {data.map((item, index) => {
             return (
               <div

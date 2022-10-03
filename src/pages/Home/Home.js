@@ -22,7 +22,7 @@ const Home = () => {
         <Header />
       </div>
       <div>
-        <div className=" xl:mt-[130px] lg:mt-[130px] mt-10">
+        <div className=" xl:mt-[130px] lg:mt-[130px] mt-10 overflow-hidden">
           <Purpose />
           <Reviewers />
           <Talent />

@@ -22,21 +22,22 @@ const Reviewers = () => {
                   delay: 0.5,
                 },
               }}
-              className="p-main  font-title xl:text-title lg:text-title text-4xl xl:leading-title lg:leading-title  text-center"
+              className="p-main  
+              font-title xl:text-title lg:text-title text-4xl xl:leading-title lg:leading-title 
+               text-center"
             >
               Meet the <br /> Reviewers
             </motion.h1>
           </div>
-          <div className=" flex  flex-col xl:flex-row lg:flex-row justify-center xl:p-main lg:p-main p-sm m-auto text-center items-center gap-x-[10px]">
+          <div className=" flex flex-col xl:flex-row lg:flex-row justify-center xl:p-main lg:p-main p-sm m-auto text-center items-center gap-x-[10px]">
             <div
-              className=" xl:w-[700px] w-[300px] lg:w-[700px] xl:h-[650px] lg:h-[650px] overflow-hidden"
+              className=" xl:w-[700px]  w-[300px] lg:w-[700px] xl:h-[650px] lg:h-[650px]"
             >
               <CarouselLeft />
             </div>
             <div
-              className="xl:w-[500px] w-[300px] lg:w-[700px] h-[800px] xl:h-[650px] lg:h-[650px] "
+              className=" xl:w-[500px]  w-[300px] lg:w-[700px] h-[800px] xl:h-[650px] lg:h-[650px] "
             >
-           
               <CarouselRight />
             </div>
           </div>

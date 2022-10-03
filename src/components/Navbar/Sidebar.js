@@ -70,7 +70,7 @@ const Sidebar = ({ show, toggle }) => {
             <span>
               <Icons.GiHeartKey className=" xl:text-3xl lg:text-3xl text-xl" />
             </span>
-            <a href="#">apply </a>
+            <a href="#apply">apply </a>
             <span>
               <Icons.GiHeartKey className=" xl:text-3xl lg:text-3xl text-xl mt-2 rotate-[90deg]" />
             </span>

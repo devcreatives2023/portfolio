@@ -27,49 +27,18 @@ const Reviewers = () => {
               Meet the <br /> Reviewers
             </motion.h1>
           </div>
-          <div className=" flex flex-col xl:flex-row lg:flex-row justify-center xl:p-main lg:p-main p-sm m-auto text-center items-center gap-x-[120px]">
-            <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 1,
-                  type: "spring",
-                  ease: "linear",
-                  delay: 0.9,
-                },
-              }}
-              className=" xl:w-[500px] lg:w-[500px] h-[600px]"
+          <div className=" flex  flex-col xl:flex-row lg:flex-row justify-center xl:p-main lg:p-main p-sm m-auto text-center items-center gap-x-[10px]">
+            <div
+              className=" xl:w-[700px] w-[300px] lg:w-[700px] xl:h-[650px] lg:h-[650px] overflow-hidden"
             >
-              LEft side{" "}
-              {/* <img
-                className="xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px] object-cover"
-                src={images.purpose2}
-              /> */}
               <CarouselLeft />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 1,
-                  type: "spring",
-                  ease: "linear",
-                  delay: 0.9,
-                },
-              }}
-              className=" xl:w-[500px] lg:w-[500px] h-[600px]"
+            </div>
+            <div
+              className="xl:w-[500px] w-[300px] lg:w-[700px] h-[800px] xl:h-[650px] lg:h-[650px] "
             >
-              Right side
-              {/* <img
-                className="xl:w-[500px] lg:w-[500px] xl:h-[600px] lg:h-[600px]  object-cover"
-                src={images.purpose2}
-              /> */}
+           
               <CarouselRight />
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

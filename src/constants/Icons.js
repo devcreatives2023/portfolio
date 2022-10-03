@@ -1,6 +1,7 @@
 import { IoLogoReddit } from "react-icons/io";
-import { FiArrowDownRight } from "react-icons/fi";
+import { FiArrowDownLeft, FiArrowDownRight } from "react-icons/fi";
 import { BsHeart } from "react-icons/bs";
+import { BiCircle } from "react-icons/bi";
 import { GiCrossMark, GiHeartKey } from "react-icons/gi";
 
 export default {
@@ -9,4 +10,6 @@ export default {
   BsHeart,
   GiCrossMark,
   GiHeartKey,
+  BiCircle,
+  FiArrowDownLeft,
 };

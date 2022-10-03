@@ -45,7 +45,6 @@ const Purpose = () => {
       <div className="mt-[5rem] relative ">
         <div className="relative overflow-hidden">
           <motion.img
-            initial={{ scale: 0.9 }}
             whileInView={{
               scale: 1,
               transition: {
@@ -54,7 +53,7 @@ const Purpose = () => {
               },
             }}
             src={images.purpose1}
-            className="xl:h-[650px] lg:h-[650px] brightness-[0.7] relative object-cover xl:w-[990px] lg:w-[990px] w-[400px] ml-auto"
+            className="xl:h-[690px] lg:h-[650px] brightness-[0.7] relative object-cover xl:w-[990px] lg:w-[990px] w-[400px] ml-auto"
           />
           <motion.div
             initial={{ height: "650px" }}
@@ -65,8 +64,8 @@ const Purpose = () => {
               },
             }}
             exit={{ height: "0px" }}
-            className=" h-[650px] hidden xl:inline-block lg:inline-block  xl:border-t-[1px] lg:border-t-[1px] border-none border-b-none border-yellow border-2 w-[990px] bg-primary absolute z-10 top-0 right-0 "
-            // style={{borderBottom:"none"}}
+            className=" h-[750px] hidden xl:inline-block lg:inline-block  xl:border-t-[1px]             
+            lg:border-t-[1px] border-none border-b-none border-yellow border-2 w-[990px] bg-primary absolute z-10 top-0 right-0 "
           />
         </div>
         <div className="top-[30%] left-[15%] overflow-hidden z-10 absolute">
